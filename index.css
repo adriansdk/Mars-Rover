@@ -1,0 +1,20 @@
+.img{
+    min-height: 400;
+    min-width:400;
+    background-image: url("./images/mars.png");
+    background-color: red;
+}
+
+.col-sm{
+    border: 5px black solid;
+    height: 50px;
+    width: 50px;
+}
+
+table tr th{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    margin: 10px 10px;
+    border: 2px black solid;
+}
