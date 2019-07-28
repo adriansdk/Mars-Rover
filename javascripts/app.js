@@ -8,17 +8,16 @@ var rover = {
 }
 
 var mars = document.getElementById("tableMars");
-var cells = document.getElementsByClassName("tableRows");
-var buceta = "amo mt"
 
+// TABLE CREATION FUNCTION 
 function createMars(){
     for (var i=0; i<10; i++){
       var row = mars.insertRow();
       row.className += "tableRows";
-    }
-    for (var j=0; j<10; j++){
-      var newCells = cells.appendChild().insertCells(0);
-      newCells.className += "tableCells"
+      var collums = document.getElementsByClassName("tableRows");
+      for (var j=0; j<10; j++){
+        collums[i].insertCell();
+      }
     }
 }
 
