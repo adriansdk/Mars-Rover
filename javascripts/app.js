@@ -7,11 +7,18 @@ var rover = {
   yPosition: 5,
 }
 
-var mars = document.getElementById("mars");
+var mars = document.getElementById("tableMars");
+var cells = document.getElementsByClassName("tableRows");
+var buceta = "amo mt"
 
-function createMars(mars){
-    for (var mars=0; mars<10; mars++){
-      var tr = document.createElement(tr);
+function createMars(){
+    for (var i=0; i<10; i++){
+      var row = mars.insertRow();
+      row.className += "tableRows";
+    }
+    for (var j=0; j<10; j++){
+      var newCells = cells.appendChild().insertCells(0);
+      newCells.className += "tableCells"
     }
 }
 
