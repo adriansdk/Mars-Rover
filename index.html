@@ -5,17 +5,32 @@
   <title>Mars Rover</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
 </head>
 
-<body onload="javascript:createMars()">
-  <h1>Mars Rover mission</h1>
-  <h3>Move the Rover using these commands</h3>
-  <ul>
-    <li><button type="text" onclick="turnRight()"> Turn Right</button></li>
-    <li><button type="text" onclick="turnLeft()"> Turn Left</button></li>
-    <li><button type="text" onclick="moveForward()"> Move Forward</button></li>
-  </ul>
+<body id="body" onload="javascript:createMars()">
+  <div class="header row">
+    <div class="headerText col-9">
+      <h1 class="display-3 main-text">Mars Rover mission</h1>
+    </div>
+    <div class="controls col">
+      <div class="row"><h3 class="text-center">Move the Rover using these commands</h3></div>
+      <div class="row">
+        <div class="col"></div>
+        <button class="btn btn-light col id="top-button" type="text" onclick="moveForward()"> Move Forward</button>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <button class="btn btn-light col" id="right-button" type="text" onclick="turnRight()"> Turn Right</button>
+        <div class="col"></div>
+        <button class="btn btn-light col" id="left-button" type="text" onclick="turnLeft()"> Turn Left</button>
+      </div>
+      <div class="row">
+          <div class="col"></div>
+          <button class="btn btn-light col" id="top-button" type="text" onclick="moveBackwards()"> Move Backwards</button>
+          <div class="col"></div>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid">
     <table id="tableMars"> 
 

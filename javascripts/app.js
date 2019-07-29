@@ -14,10 +14,10 @@ function createMars(){
     for (var i=0; i<10; i++){
       var row = mars.insertRow();
       row.className += "tableRows";
-      var collums = document.getElementsByClassName("tableRows");
+      var columns = document.getElementsByClassName("tableRows");
       for (var j=0; j<10; j++){
-        collums[i].insertCell();
-      }
+        columns[i].insertCell();
+      } 
     }
 }
 
@@ -74,8 +74,23 @@ function moveForward(rover){
   } else if (this.rover.direction === "South" && this.rover.yPosition > 0){
     this.rover.yPosition = this.rover.yPosition - 1
   } else if (this.rover.direction === "West" && this.rover.xPosition > 0){
-    this.rover.xPosition = this.rover.xPosition -1
+    this.rover.xPosition = this.rover.xPosition - 1
   }
   console.log("The rover is in the X = " + this.rover.yPosition, " Y = " + this.rover.xPosition, " position")
   
 }
+
+function moveBackwards(rover){
+  console.log("moveBackwards was called")
+  if (this.rover.direction === "North" && this.rover.yPosition < 10){  
+    this.rover.yPosition = this.rover.yPosition - 1
+  } else if (this.rover.direction === "East" && this.rover.xPosition < 10){
+    this.rover.xPosition = this.rover.xPosition - 1
+  } else if (this.rover.direction === "South" && this.rover.yPosition > 0){
+    this.rover.yPosition = this.rover.yPosition + 1
+  } else if (this.rover.direction === "West" && this.rover.xPosition > 0){
+    this.rover.xPosition = this.rover.xPosition + 1
+  }
+  console.log("The rover is in the X = " + this.rover.yPosition, " Y = " + this.rover.xPosition, " position")
+}
+

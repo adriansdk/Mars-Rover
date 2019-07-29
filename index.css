@@ -1,15 +1,33 @@
-.img{
-    min-height: 400;
-    min-width:400;
-    background-image: url("./images/mars.png");
-    background-color: red;
+#body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serifç
 }
 
-.col-sm{
-    border: 5px black solid;
-    height: 50px;
-    width: 50px;
+.header{
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    color: white;
 }
+
+.headerText{
+    display: inline-block;
+    margin: 0px 30px;
+    width: 40%;
+}
+
+.header .btn{
+    margin-top:5px;
+    height: 50px;
+    width: 100px;
+}
+
+
+.controls{
+    display: inline-block;
+    float: right;
+}
+
 
 table td{
     background-color: red;
