@@ -30,7 +30,9 @@ html{
     background-color: black;
     color: white;
 }
-
+.buttons{
+    margin: 150px 10px 0px 20px;
+}
 table {
     height: 100%;
     width: 100%;
