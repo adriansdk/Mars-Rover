@@ -8,34 +8,28 @@
 </head>
 
 <body id="body" onload="javascript:createMars()">
-  <div class="header row controls">
-    <div class="headerText col">
+<div class="row full">
+  <div class="header col-3 p-0">
+    <div class="col m-0">
       <h1 class="display-3 main-text">Mars Rover mission</h1>
-      <div class="row">
-        <h3 class="text-center">Move the Rover using these commands</h3>
-      </div>
-      <div class="row">
-        <div class="col"></div>
-        <button class="btn btn-light col id="top-button" type="text" onclick="moveForward()"> Move Forward</button>
-        <div class="col"></div>
-      </div>
-      <div class="row">
-        <button class="btn btn-light col" id="right-button" type="text" onclick="turnRight()"> Turn Right</button>
-        <div class="col"></div>
-        <button class="btn btn-light col" id="left-button" type="text" onclick="turnLeft()"> Turn Left</button>
-      </div>
-      <div class="row">
-          <div class="col"></div>
+      <h3>Move the Rover using these commands</h3>
+      <div class="buttons">
+        <div class="row justify-content-center">     
+          <button class="btn btn-light top-button" type="text" onclick="moveForward()"> Move Forward</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-light col" id="right-button" type="text" onclick="turnLeft()"> Turn Left</button>
           <button class="btn btn-light col" id="top-button" type="text" onclick="moveBackwards()"> Move Backwards</button>
-          <div class="col"></div>
+          <button class="btn btn-light col" id="left-button" type="text" onclick="turnRight()"> Turn Right</button>
+        </div>
       </div>
-    </div>
-  </div>
-    <div class="col tableColumn">
-      <table id="tableMars">   
-      </table>
     </div>
   </div>   
+  <div class="col p-0 tableColumn">
+    <table id="tableMars">   
+    </table>
+  </div>
+</div>
   <script src="javascripts/app.js"></script>
 </body>
 </html>

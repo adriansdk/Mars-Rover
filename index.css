@@ -1,39 +1,40 @@
+html{
+    height: 100%;
+    width: 100%;
+}
 #body {
     background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serifç
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width:100%;
+}
+
+.full{
+    height: 100%;
+    width: 100%;
 }
 
 .header{
-    background-color: black;
-    height: 600px;
-    width: 20%;
+    background-color: black;    
     color: white;
 }
 
-.headerText{
-    margin: 0px 30px;
-    width: 40%;
-}
-
 .header .btn{
-    margin-top:5px;
-    height: 50px;
-    width: 100px;
+    height: 70px;
+    width: 30%;
+    margin: 3px 3px;
 }
 
-
-.controls{
-    display: inline-block;
-    float: right;
-    position: absolute;
+table {
+    height: 100%;
+    width: 100%;
 }
-
 
 table td{
     background-color: red;
-    height: 50px;
-    width: 50px;
-    margin: 10px 10px;
+    height: 10%;
+    width: 10%;
+    margin: 0;
     border: 2px black solid;
 }
 
