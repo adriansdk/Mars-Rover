@@ -31,11 +31,11 @@ table {
 }
 
 table td{
-    background-color: red;
+    background-color: grey;
     height: 10%;
     width: 10%;
     margin: 0;
-    border: 2px black solid;
+    border: 5px black solid;
 }
 
 .tableColumn{
